@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <title>web player</title>
+
+
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="close">
+                <img width="20" class="invert" src="svgs/close.svg" alt="">
+            </div>
+            <div class="home bg-grey  rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="svgs/logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="svgs/home.svg" alt="home">home</li>
+                   <!--<li><img class="invert" src="svgs/search.svg" alt="search">search</li>--> 
+
+                   <div class="search">
+                       
+                       <!--<button><img bacgroundcolor="bg-black" width="20px"src="svgs/search.svg" alt="search"></li></button>onkeyup="search()"-->
+                        <input type ="text" name=" " id="find" placeholder="search songs" src="svgs/search.svg" >
+                       
+                         
+                     </div>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading"><img class="invert" src="svgs/playlist.svg" alt="">
+                    <h2>
+                        your library
+                    </h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <li>
+                            <img class="invert" src="svgs/music.svg">
+                            <div class="info">
+                                <div>song name</div>
+                                <div>song artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>play now</span>
+                                <img class="invert" src="svgs/play.svg">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+
+
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                                Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="right bg-grey  rounded ">
+
+              
+             <div class="header">
+
+                
+                
+                <div class="nav">
+
+
+                    <!--<img class="invert hamburger" src="hamburger.svg" alt="">-->
+
+                    <div class="hamburgerContainer">
+                        <img class="invert hamburger"  src="svgs/hamburger.svg">
+
+                        
+
+                    
+                    
+
+
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                             </svg>
+                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262
+                                14.2929 11.2929L9 6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                         </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="Signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify playlist</h1>
+               
+                <div class="CardContainer">
+                    
+                    <!--<div class="con">
+                          <h2>"new songs"</h2>-->
+                                        <div data-folder="ncs"class="card ">
+                                            <!--<div class="full-screen" id="fulscreen">-->
+                                               <div class="play">
+                                               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                               xmlns="http://www.w3.org/2000/svg">
+                                               <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                               stroke-linejoin="round" />
+                                               </svg>
+                                               </div>
+                                               <img src="songs/ncs/photo1.jpg" alt="">
+                                               <h2>Happy Hits!</h2>
+                                               <p>Grooving to the beats of happiness</p>
+                                            
+                                        </div>    
+
+                                        <div data-folder="arijit"class="card ">
+                                        <div class="play">
+                                               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                               xmlns="http://www.w3.org/2000/svg">
+                                               <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                               stroke-linejoin="round" />
+                                                </svg>
+                                                </div>
+                                                    <img src="songs/arijit/photo10.jpg" alt="">
+                                                <h2>arijit's song</h2>
+                                                <p>In a relationship with your favorite songs</p>
+                                         </div>
+                    <!-- </div>-->
+                    <div data-folder="hyyy"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/hyyy/photo3.jpg" alt="">
+                        <h2>Dance</h2>
+                        <p>life's too short not to dance to your fav songs </p>
+                    </div>
+
+                    <div data-folder="mix"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/mix/photo4.jpg" alt="">
+                        <h2>mix</h2>
+                        <p>ears plugged ,worries out</p>
+                    </div>
+                    <div data-folder="pop"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/pop/photo5.jpg" alt="">
+                        <h2>songs</h2>
+                        <p>Volume up...</p>
+                    </div>
+
+                    <div data-folder="cs"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/cs/photo6.jpg" alt="">
+                        <h2>pop</h2>
+                        <p>Hits to boost ypur mood and fill you with happiness</p>
+                    </div>
+                    <div data-folder="stay"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/stay/photo7.jpg" alt="">
+                        <h2>Stay with me</h2>
+                        <p>making memories one song at a time</p>
+                    </div>
+                    <div data-folder="moody"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/moody/photo8.jpg" alt="">
+                        <h2>song</h2>
+                        <p>life is better with a soundtrack</p>
+                    </div>
+                    <div data-folder="arijit"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/arijit/photo9.jpg" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost ypur mood and fill you with happiness</p>
+                    </div>
+                    <div data-folder="arman_ma"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/arman_ma/photo2.jpg" alt="">
+                        <h2>mood lifter</h2>
+                        <p>tune into happiness</p>
+                    </div>
+                    <div data-folder="pop"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/pop/photo5.jpg" alt="">
+                        <h2>notes of joy</h2>
+                        <p>Hits to boost ypur mood and fill you with happiness</p>
+                    </div>
+                    <div data-folder="pop"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/mix/photo11.jpg" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p> with happiness</p>
+                    </div>
+                    <div data-folder="dav"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/dav/photo12.jpg" alt="">
+                        <h2>notes of joy</h2>
+                        <p>Hits to boost ypur mood and fill you with happiness</p>
+                    </div>
+                    <div data-folder="old"class="card ">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="songs/old/old.jpg" alt="">
+                        <h2>90's Song</h2>
+                        <p>Old with gold</p>
+                    </div>
+
+                 <!-- <div class="album-preview">
+                          <div class="preview " data-tar="ncs">
+                    
+                              <i class="fas fa-times"></i>
+                                <img width="20" class="invert" src="svgs/close.svg" alt="">
+                                 <img src="songs/ncs/photo1.jpg" alt="">
+                    
+
+                                <h2>Happy Hits!</h2>
+                                <p>Grooving to the beats of happiness</p>
+                              <div class="love">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                              </div>
+                          </div>
+                
+                          <div class="preview " data-folder="dav">
+                                  <i class="fas fa-times"></i>
+                                  <img width="20" class="invert" src="svgs/close.svg" alt="">
+                                  <img src="songs/dav/photo12.jpg" alt="">
+                                 <h2>notes of joy</h2>
+                                 <p>Hits to boost ypur mood and fill you with happiness</p>
+                           </div>
+
+                       
+                    </div>  -->   
+                
+                
+                
+                
+                
+                
+                
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+
+                    <div class="abovebar">
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <img width="30"id="previous" src="svgs/prevsong.svg" alt="">
+                            <img width="30"id="play" src="svgs/play.svg" alt="">
+                            <img width="30"id="next" src="svgs/nextsong.svg" alt="">
+
+                        </div>
+                        <div class="timevol">
+
+                        
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <img width="25" src="svgs/volume.svg">
+                            <div class="range">
+                                <input  type="range"  name="volume"  id="" >                     
+                             </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
